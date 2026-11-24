@@ -19,5 +19,10 @@
                 padding: 0.5rem;
             }
         }
+
+        tr.conflict{
+            background-color: #914040;
+                color: white;
+        }
     }
 }

@@ -13,7 +13,7 @@ export const AbsenceRow = ({absence} : {absence : absence}) => {
             })
     },[])
     return(
-        <tr key={`absence-${absence.id}`}>
+        <tr key={`absence-${absence.id}`} className={conflict ? "conflict" : ""}>
             <td>{absence.employee.firstName + " " + absence.employee.lastName}</td>
             <td>{FormatDate(absence.startDate)}</td>
             <td>{absence.days}</td>
