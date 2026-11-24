@@ -1,7 +1,9 @@
 export type absenceType = (
-    "SICKNESS" 
-    | "ANNUAL_LEAVE"
+    "ANNUAL_LEAVE"
+    | "COMPASSIONATE_LEAVE"
+    | "FAMILY"
     | "MEDICAL"
+    | "SICKNESS" 
 )
 
 export type employee = {
