@@ -1,0 +1,23 @@
+.absence-table{
+    width: fit-content;
+    height: max-content;
+
+    thead{
+        color: white;
+        background-color: #415a77;
+        
+        th{
+            padding: 0.5rem;
+        }
+    }
+
+    tbody{
+        tr{
+            background-color: #e0e1dd;
+            
+            td{
+                padding: 0.5rem;
+            }
+        }
+    }
+}

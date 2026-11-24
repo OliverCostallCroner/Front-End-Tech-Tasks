@@ -2,7 +2,7 @@ import { absence } from "../../lib/types";
 
 export const AbsenceTable = ({data} : {data : absence[]}) => {
     return(
-        <table>
+        <table className="absence-table">
             <thead>
                 <tr>
                     <th>Employee</th>
