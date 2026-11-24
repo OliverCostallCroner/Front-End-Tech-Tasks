@@ -11,6 +11,7 @@ export const AbsenceTable = ({data} : {data : absence[]}) => {
                     <th>Days</th>
                     <th>Absence Type</th>
                     <th>Status</th>
+                    <th>Conflict</th>
                 </tr>
             </thead>
             <tbody>
