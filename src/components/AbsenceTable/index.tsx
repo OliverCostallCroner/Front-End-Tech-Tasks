@@ -1,4 +1,5 @@
 import { absence } from "../../lib/types";
+import { AbsenceRow } from "./AbsenceRow";
 
 export const AbsenceTable = ({data} : {data : absence[]}) => {
     return(
@@ -14,13 +15,7 @@ export const AbsenceTable = ({data} : {data : absence[]}) => {
             </thead>
             <tbody>
                 {data.map((absence) => (
-                    <tr key={`absence-${absence.id}`}>
-                        <td>{absence.employee.firstName + " " + absence.employee.lastName}</td>
-                        <td>{absence.startDate}</td>
-                        <td>{absence.days}</td>
-                        <td>{absence.absenceType}</td>
-                        <td>{absence.approved ? "Yes" : "No"}</td>
-                    </tr>
+                    <AbsenceRow absence={absence} key={`absence-${absence.id}`}/>
                 ))}
             </tbody>
         </table>
