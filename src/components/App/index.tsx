@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { absence } from "../../lib/types";
+import { AbsenceTable } from "../AbsenceTable";
 
 export const App = () => {
     const [data, setData] = useState<absence[]>([]);
@@ -17,6 +18,8 @@ export const App = () => {
     },[])
 
     return(
-        <p className="test-text">test - App</p>
+        <div className="page-body">
+            <AbsenceTable data={data}/>
+        </div>
     )
 }
