@@ -1,6 +1,6 @@
 
 export const App = () => {
     return(
-        <p>test - App</p>
+        <p className="test-text">test - App</p>
     )
 }
